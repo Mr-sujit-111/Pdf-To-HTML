@@ -25,12 +25,13 @@
         position: absolute;
         top: 0;
         left: 50%;
-        transform: translateX(-50%);
-        width: 100%;
+        margin-left: -50%; /* Adjust this value to half of the container's width */
+        width: 95%; /* Set a max-width equivalent */
         height: 100%;
         border-spacing: 15mm;
         max-width: 95%;
       }
+
       .column {
         display: table-cell;
         width: 50%;
@@ -147,6 +148,15 @@
       .footer {
         margin-top: 8mm;
       }
+
+      /* Tthi you can change as per your Header/Footer requirement */
+      #header {
+        background-color: #f4f4f4;
+      }
+
+      #footer {
+        background-color: #f4f4f4;
+      }
     </style>
     <!--    <style>
       @page {
@@ -241,6 +251,7 @@
     </style> -->
   </head>
   <body>
+    <div id="header"></div>
     <div class="container clearfix">
       <div class="column">
         <div class="header">COQ/CFNNZ</div>
@@ -393,5 +404,6 @@
         </div>
       </div>
     </div>
+    <div id="footer"></div>
   </body>
 </html>
