@@ -13,7 +13,7 @@
         font-size: 9pt;
         line-height: 1.2;
         margin: 0;
-        padding: 5mm 10mm;
+        padding: 20mm 10mm;
       }
 
       table {
@@ -39,6 +39,10 @@
         line-height: 1.4;
         font-size: 8pt;
       }
+      .footer_text {
+        line-height: 1.2;
+        font-size: 8pt;
+      }
       h3 {
         font-size: 11pt;
         margin: 8mm 0 4mm 0;
@@ -54,13 +58,27 @@
         display: inline-block;
         max-width: calc(100% - 45mm);
       }
-      .footer {
-        margin-top: 5mm;
+      .footer_sign {
+        margin-top: 1mm;
       }
       .signature {
         width: 210px;
-        height: 60px;
-        margin-bottom: 5mm;
+        height: 40px;
+        margin-bottom: 0mm;
+      }
+      
+      .footer_wrapper {
+          
+          padding: 20px;
+          background-color: #f1f1f1; /* Light background for footer */
+          position: relative;
+      }
+
+      .footer {
+        width: 100px;
+        height: 200px;
+        object-fit: cover; 
+        border-radius: 10px; 
       }
 
       /* Table_1 */
@@ -115,7 +133,7 @@
 
       .label_3 {
         display: inline-block;
-        width: 18mm;
+        width: 20mm;
         vertical-align: top;
         font-weight: 500;
         padding: 1mm 0;
@@ -137,7 +155,7 @@
 
       .label_4 {
         display: inline-block;
-        width: 18mm;
+        width: 20mm;
         vertical-align: top;
         font-weight: 500;
         padding: 1mm 0;
@@ -149,7 +167,7 @@
         display: inline-block;
         vertical-align: top;
         white-space: normal;
-        width: 63mm;
+        width: 65mm;
         padding: 1mm 0;
         white-space: pre-wrap;
         line-height: 1.4;
@@ -173,6 +191,7 @@
     </style>
   </head>
   <body>
+  <!-- Header -->
     <table>
       <tr>
         <td width="50%">
@@ -191,9 +210,7 @@
           <div class="spec_row_1">
             <span class="label_1">Product</span>
             <span class="colon">:</span>
-            <span class="value_1"
-              >Positively Charged Nylon Cartridge Filter</span
-            >
+            <span class="value_1">Positively Charged Nylon Cartridge Filter</span>
           </div>
           <div class="spec-row">
             <span class="label_1">Type</span>
@@ -264,10 +281,7 @@
           <div class="spec_row_1">
             <span class="label_3">Filter Integrity Test</span>
             <span class="colon">:</span>
-            <span class="value_3"
-              >Water wetted Bubble Point 50 psi & retains 107 organisms/cm2 of
-              Brevundimonas diminuta (ATCC 19146) for microbial challenge</span
-            >
+            <span class="value_3">Water wetted Bubble Point 50 psi & retains 107 organisms/cm2 of Brevundimonas diminuta (ATCC 19146) for microbial challenge</span>
           </div>
           <div class="spec-row">
             <span class="label_3">Leachable Assurance</span>
@@ -283,8 +297,7 @@
           <div class="spec-row">
             <span class="label_4">Cleanliness</span>
             <span class="colon">:</span>
-            <span class="value_4"
-              >Fibre/ Particle Release Test Extractable Bacterial Endotoxins
+            <span class="value_4">Fibre/ Particle Release Test Extractable Bacterial Endotoxins
             </span>
           </div>
 
@@ -296,25 +309,25 @@
           <div class="spec-row">
             <span class="label_4">Endotoxin Reduction</span>
             <span class="colon">:</span>
-            <span class="value_4"
-              >The filtrate from downstream exhibited endotoxin result &lt; 0.25
-              EU/ml when tested as per methodology mentioned in USP &lt;85&gt;;
-              The positive charge of the membrane provides higher retention of
-              endotoxins and other anionic impurities
+             <span class="value_4">The filtrate from downstream exhibited endotoxin result &lt; 0.25 EU/ml when tested as per methodology mentioned in USP &lt;85&gt;; The positive charge of the membrane provides higher retention of endotoxins and other anionic impurities
             </span>
           </div>
-          <p class="intro-text">
+          <p class="footer_text">
             In addition to the above tests, this product meets manufacturing and
             inspection standards and requirements for full traceability. These
             products are supplied sterile/non-sterile. Only unopened and
             undamaged packages should be considered for intended use.
           </p>
-          <div class="footer">
+          <div class="footer_sign">
             <img src="signature.png" alt="Signature" class="signature" />
             <h3><strong>Head Of Quality Assurance</strong></h3>
           </div>
         </td>
       </tr>
     </table>
+    <!-- Footer -->
+    <div class="footer_wrapper">
+    <img src="https://via.placeholder.com/100x200" alt="Signature" class="footer" />
+</div>
   </body>
 </html>
