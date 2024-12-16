@@ -24,11 +24,7 @@
         vertical-align: top;
         padding: 0 2mm;
       }
-      .header {
-        font-weight: bold;
-        font-size: 18pt;
-        margin-bottom: 8mm;
-      }
+
       .date {
         text-align: start;
         margin-bottom: 0mm;
@@ -39,10 +35,7 @@
         line-height: 1.4;
         font-size: 8pt;
       }
-      .footer_text {
-        line-height: 1.2;
-        font-size: 8pt;
-      }
+
       h3 {
         font-size: 11pt;
         margin: 8mm 0 4mm 0;
@@ -63,9 +56,7 @@
         display: inline-block;
         max-width: calc(100% - 45mm);
       }
-      .footer_sign {
-        margin-top: 4mm;
-      }
+
       .signature {
         width: 120px;
         height: 50px;
@@ -74,8 +65,17 @@
 
       .footer_wrapper {
         padding: 0px;
-        position: relative;
+        position: absolute;
+        bottom: 0;
       }
+
+      /* header */
+      .header {
+        font-weight: bold;
+        font-size: 18pt;
+        margin-bottom: 8mm;
+      }
+
       .Header_wrapper {
         padding: 0px;
         position: relative;
@@ -86,6 +86,15 @@
         border-radius: 5px;
       }
 
+      /* footer */
+      .footer_sign {
+        margin-top: 4mm;
+      }
+
+      .footer_text {
+        line-height: 1.2;
+        font-size: 8pt;
+      }
       .footer {
         width: 650px;
         height: 180px;
